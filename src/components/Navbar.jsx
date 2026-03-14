@@ -202,6 +202,18 @@ const Navbar = () => {
                 <Link to="/orders" className="block py-2 text-gray-600" onClick={() => setMenuOpen(false)}>
                   Orders
                 </Link>
+                <Link to="/wishlist" className="block py-2 text-gray-600" onClick={() => setMenuOpen(false)}>
+                  Wishlist
+                </Link>
+                {user?.role === "admin" && (
+                  <Link
+                    to="/admin/dashboard"
+                    className="block py-2 text-indigo-600 font-medium"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Admin Panel
+                  </Link>
+                )}
                 <button onClick={handleLogout} className="block py-2 text-red-600">
                   Logout
                 </button>
