@@ -8,7 +8,9 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        // ── Switch target as needed ──────────────────────────────────────
+        target: "http://localhost:5000",                            // local dev
+        // target: "https://ecommers-textile-backend.onrender.com", // Render backend
         changeOrigin: true,
       },
     },

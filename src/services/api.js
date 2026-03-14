@@ -1,7 +1,11 @@
 import axios from "axios";
 
+// Dev: VITE_API_URL is empty → Vite proxy forwards /api → localhost:5000
+// Prod: VITE_API_URL = https://ecommers-textile-backend.onrender.com/api
+const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+
 const API = axios.create({
-  baseURL: "/api",
+  baseURL: BASE_URL,
   withCredentials: true,
   headers: { "Content-Type": "application/json" },
 });
