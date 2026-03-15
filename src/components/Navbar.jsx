@@ -46,8 +46,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-indigo-700">Textile</span>
-            <span className="text-2xl font-light text-gray-600">Store</span>
+            <span className="text-2xl font-bold text-indigo-700">Aadhav</span>
+            <span className="text-2xl font-light text-gray-600">Trend</span>
           </Link>
 
           {/* Search Bar */}

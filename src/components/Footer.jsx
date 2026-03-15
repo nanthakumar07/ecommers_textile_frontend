@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4">
-              Textile<span className="font-light text-indigo-400">Store</span>
+              Aadhav<span className="font-light text-indigo-400">Trend</span>
             </h3>
             <p className="text-sm leading-relaxed">
               Your one-stop destination for premium quality fabrics, garments,
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} TextileStore. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AadhavTrend. All rights reserved.</p>
         </div>
       </div>
     </footer>
